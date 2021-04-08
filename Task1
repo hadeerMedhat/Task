@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.topnav .search-container {
+  float: right;
+  margin-right:200px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+
+
+.container .btn {
+  position: absolute;
+  top: 400px;
+
+
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+ margin-left:500px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+
+.container .btn1{
+  position: absolute;
+  top: 400px;
+
+
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+ margin-left:900px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn1:hover {
+  background-color: black;
+}
+
+.container .text{
+ position: absolute;
+  text-align: center;
+  top: 200px;
+   margin-left:400px;
+  color:white;
+  font-family: Arial
+}
+
+
+.container1 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container1 .text2{
+ position: absolute;
+  text-align: center;
+  top: 200px;
+   margin-left:400px;
+  color:white;
+  font-family: Arial
+}
+
+
+ .btn3{
+  position: absolute;
+ 
+
+
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 350px;
+  border: none;
+
+  border-radius: 5px;
+  text-align: center;
+}
+
+ .btn4{
+  position: absolute;
+ 
+
+margin-left:840px;
+  background-color: #A9A9A9;
+  color: white;
+  font-size: 16px;
+  padding: 12px 300px;
+  border: none;
+
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn3:hover {
+  background-color: black;
+}
+.btn4:hover {
+  background-color: black;
+}
+
+
+ 
+
+
+
+.dot {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  border: 2px solid red;
+  display: inline-block;
+  text-align:center;
+}
+
+
+.dot2 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-left:100px;
+   border: 2px solid red;
+  display: inline-block;
+  text-align:center;
+}
+
+
+.dot3 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+    margin-left:100px;
+	 border: 2px solid red;
+  display: inline-block;
+  text-align:center;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left:400px;
+
+}
+
+.dot4 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+   border: 2px solid red;
+  display: inline-block;
+  text-align:center;
+}
+
+
+.dot5 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-left:100px;
+   border: 2px solid red;
+  display: inline-block;
+  text-align:center;
+}
+
+
+.dot6 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+    margin-left:100px;
+	 border: 2px solid red;
+  display: inline-block;
+  text-align:center;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left:400px;
+
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.btn5 {
+  background-color: #008B8B;
+  border: none;
+  color: white;
+  padding: 10px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:50px;
+   border-radius: 10%;
+  cursor: pointer;
+}
+.btn6 {
+  background-color: #008B8B;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:50px;
+   border-radius: 10%;
+  cursor: pointer;
+  margin-left:700px;
+}
+
+
+.container3 {
+  position: relative;
+  text-align: center;
+  color: Black;
+  font-size:40px;
+  font-family:Cursive;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 500px;
+    top: 420px;
+}
+.top-right {
+  position: absolute;
+   top: 420px;
+
+  right: 500px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 5px;
+  right: 300px;
+    top: 420px;
+}
+
+.centered {
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot7 {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+    margin-left:100px;
+	 border: 2px solid red;
+  display: inline-block;
+  top=500px;
+}
+
+#example1 {
+  border: 2px solid #008B8B;
+  padding: 5px;
+  width:200px;
+  text-align:center;
+  margin-left:200px;
+   margin-bottom: -60px;
+
+  
+}
+
+#example2 {
+  border: 2px solid #008B8B;
+  padding: 5px;
+  width:200px;
+  text-align:center;
+  margin-left:600px;
+ 
+ margin-bottom: -60px;
+  
+}
+
+#example3 {
+  border: 2px solid #008B8B;
+  padding: 5px;
+  width:200px;
+  text-align:center;
+  margin-left:1000px;
+ margin-bottom: 40px;
+  
+}
+
+#example4 {
+  border: 2px solid #008B8B;
+  padding: 5px;
+  width:200px;
+  text-align:center;
+  margin-left:200px;
+ margin-bottom: -60px;
+  
+}
+
+#example5 {
+  border: 2px solid #008B8B;
+  padding: 5px;
+  width:200px;
+  text-align:center;
+  margin-left:600px;
+
+  
+}
+.container4{
+background-color: #F0F8FF;
+}
+
+.container5{
+background-color: #F8F8FF;
+}
+
+
+.left1 {
+  position: absolute;
+  bottom: 5px;
+  left:200px;
+    top: 420px;
+	font-family:Serif;
+	font-size:40px;
+	color:#8A2BE2;
+}
+
+
+.left2 {
+  position: absolute;
+  bottom: 5px;
+ left:200px;
+    top: 200px;
+	
+	font-family:Serif;
+	font-size:40px;
+	color:#8A2BE2;
+}
+
+
+.left3 {
+  position: absolute;
+  bottom: 5px;
+   left:200px;
+   top: 350px;
+	
+	font-family:Serif;
+	font-size:40px;
+	color:#8A2BE2;
+}
+
+.left4 {
+  position: absolute;
+  bottom: 5px;
+  left:200px;
+   top: 300px;
+	
+	font-family:Serif;
+	font-size:40px;
+	color:#8A2BE2;
+}
+
+.left5 {
+  position: absolute;
+  bottom: 5px;
+  left:200px;
+   top: 250px;
+	
+	font-family:Serif;
+	font-size:40px;
+	color:#8A2BE2;
+}
+
+.left6 {
+  position: absolute;
+  bottom: 5px;
+  left:200px;
+   top: 150px;
+	
+	font-family:Serif;
+	font-size:40px;
+	color:#8A2BE2;
+}
+.text5{
+ margin-bottom:100px;
+
+
+}
+
+.text5{
+
+position: absolute;
+  top: 8px;
+  left: 16px;
+
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+.header1 {
+  padding: 30px;
+  text-align: center;
+  background: #A9A9A9;
+  color: white;
+}
+
+
+
+.left7 {
+  position: absolute;
+ 
+  left:200px;
+   
+	
+	font-family:Serif;
+	font-size:20px;
+	color:white;
+}
+
+
+.left8 {
+  position: absolute;
+ bottom: 10px;
+  left:600px;
+   
+	
+	font-family:Serif;
+	font-size:20px;
+	color:white;
+	
+}
+
+.left9 {
+  position: absolute;
+  bottom: 10px;
+  left:450px;
+   
+	
+	font-family:Serif;
+	font-size:20px;
+	color:white;
+	
+}
+
+
+.left10 {
+  position: absolute;
+  bottom: 10px;
+  left:300px;
+   
+	
+	font-family:Serif;
+	font-size:20px;
+	color:white;
+	
+}
+
+
+
+
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+
+  <a href="#about"><img src="C:\Users\dell\Desktop\3.png" alt="Etsilat" width="30" height="30" ></a>
+   <a class="active" href="#home">Plan and server</a>
+    <a class="active" href="#home">Shop</a>
+	 <a class="active" href="#home">Help</a>
+ 
+  
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <img src="C:\Users\dell\Desktop\m2150249_NewResolutionStaySafeBanner.png" width="1535">
+ 
+  <button class="btn">Locate your nearest store</button>
+    <button class="btn1">Subscribe Now</button>
+</div>
+
+
+
+
+  <button class="btn3">Recommand Package</button>
+ <button class="btn4">Main Package</button>
+ <br>
+ <br>
+  <h1>pick your voice and internet plan</h1>
+ <div style="text-align:center">
+ <p>Choose your bunndle</p>
+ 
+
+ <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider"></span>
+</label><br><br>
+<p style="margin-right:400px">Data bunndle</p>
+  <span class="dot">1GB</span>
+
+  <span class="dot2">1GB</span>
+  <span class="dot3">1GB</span>
+</div>
+
+<div style="text-align:center">
+ <p style="margin-right:400px">Voice bunndle</p>
+  <span class="dot4">200min</span>
+  <span class="dot5">200min</span>
+  <span class="dot6">200min</span>
+  </div>
+<div    style="text-align:center">
+ <img src="C:\Users\dell\Desktop\4.png" width="50">
+
+  <img src="C:\Users\dell\Desktop\5.png" width="50">
+   <img src="C:\Users\dell\Desktop\6.jfif" width="50">
+   <img src="C:\Users\dell\Desktop\8.png" width="50">
+
+
+</div>
+<div    style="text-align:center">
+<button class="btn5">Check box</button>
+</div>
+
+
+<div class="container3">
+  <img src="C:\Users\dell\Desktop\10.jpg" alt="Snow" style="width:100%;  height:500px; opacity: 0.5;">
+ <div style="text-align:center">
+
+
+  <div class="top-left">Know the feature</div>
+  <div class="bottom-left">Title</div>
+  <div class="top-right">Title</div>
+  <div class="bottom-right">Title</div>
+  <div class="centered">Centered</div>
+ 
+</div>
+</div>
+  <h1>Explore possible Add Ons</h1>
+<button class="btn6">Data</button>
+<div  class="container4">
+<div id="example1">
+  <p>9GBs</p>
+</div>
+<div id="example2">
+  <p>9GBs</p>
+</div>
+<div id="example3">
+  <p>9GBs</p>
+</div>
+
+<div id="example4">
+  <p>9GBs</p>
+</div>
+<div id="example5">
+  <p>9GBs</p>
+</div>
+</div>
+
+<button class="btn6">Voice</button>
+<div  class="container4">
+<div id="example1">
+  <p>9GBs</p>
+</div>
+<div id="example2">
+  <p>9GBs</p>
+</div>
+<div id="example3">
+  <p>9GBs</p>
+</div>
+
+<div id="example4">
+  <p>9GBs</p>
+</div>
+<div id="example5">
+  <p>9GBs</p>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container3">
+
+  <img src="C:\Users\dell\Desktop\10.jpg"  style="width:100%;  height:500px; opacity: 0.5;">
+ <div style="text-align:center">
+<p class="text5">Term & Condation </p>
+
+  
+  <div class="left1">Condation</div>
+  <div class="left2">Condation</div>
+  <div class="left3">Condation</div>
+  <div class="left4">Condation</div>
+  <div class="left5">Condation</div>
+  <div class="left6">Condation</div>
+ 
+</div>
+
+
+<div class="header">
+  <h1>Get the latest offers for Dmagh tanya</h1>
+  <p>Follow us on our social media platforms</p>
+   <img src="C:\Users\dell\Desktop\11.png"  style="width:50;  height:50px; ">
+    <img src="C:\Users\dell\Desktop\12.jpg"  style="width:50;  height:50px; ">
+	 <img src="C:\Users\dell\Desktop\13.png"  style="width:50;  height:50px; ">
+	 	
+</div>
+
+
+<div class="header1">
+
+    <div class="left7">Etsilat</div>
+  <div class="left8">About us</div>
+  <div class="left9">Contact us</div>
+  <div class="left10">Find a store</div>
+
+ 
+   
+	 	
+</div>
+</body>
+</html>
+
